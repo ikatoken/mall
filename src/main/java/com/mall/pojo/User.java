@@ -2,25 +2,29 @@ package com.mall.pojo;
 
 import java.util.Date;
 
+/**
+ * 用户实体对象
+ */
 public class User {
+    //用户主键编号
     private Integer id;
-
+    //用户名
     private String username;
-
+    //用户密码
     private String password;
-
+    //用户邮箱
     private String email;
-
+    //用户手机号
     private String phone;
-
+    //忘记密码提示问题
     private String question;
-
+    //忘记密码提示答案
     private String answer;
-
+    //用户权限
     private Integer role;
-
+    //创建时间
     private Date createTime;
-
+    //修改时间
     private Date updateTime;
 
     public User(Integer id, String username, String password, String email, String phone, String question, String answer, Integer role, Date createTime, Date updateTime) {

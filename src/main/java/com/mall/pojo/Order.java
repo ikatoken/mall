@@ -3,33 +3,37 @@ package com.mall.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 订单实体对象
+ */
 public class Order {
+    //订单主键ID
     private Integer id;
-
+    //订单编号
     private Long orderNo;
-
+    //用户编号
     private Integer userId;
-
+    //购物车编号
     private Integer shippingId;
-
+    //实际支付金额
     private BigDecimal payment;
-
+    //支付类型1-在线支付2
     private Integer paymentType;
-
+    //运费
     private Integer postage;
-
+    //订单状态
     private Integer status;
-
+    //支付时间
     private Date paymentTime;
-
+    //发货时间
     private Date sendTime;
-
+    //交易完成时间
     private Date endTime;
-
+    //交易关闭时间
     private Date closeTime;
-
+    //创建时间
     private Date createTime;
-
+    //最后修改时间
     private Date updateTime;
 
     public Order(Integer id, Long orderNo, Integer userId, Integer shippingId, BigDecimal payment, Integer paymentType, Integer postage, Integer status, Date paymentTime, Date sendTime, Date endTime, Date closeTime, Date createTime, Date updateTime) {

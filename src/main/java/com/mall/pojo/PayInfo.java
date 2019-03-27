@@ -2,21 +2,25 @@ package com.mall.pojo;
 
 import java.util.Date;
 
+/**
+ * 支付详情实体
+ */
 public class PayInfo {
+    //支付详情主键编号
     private Integer id;
-
+    //用户编号
     private Integer userId;
-
+    //订单编号
     private Long orderNo;
-
+    //支付平台
     private Integer payPlatform;
-
+    //支付宝交易流水号
     private String platformNumber;
-
+    //支付宝支付状态
     private String platformStatus;
-
+    //创建时间
     private Date createTime;
-
+    //最后修改时间
     private Date updateTime;
 
     public PayInfo(Integer id, Integer userId, Long orderNo, Integer payPlatform, String platformNumber, String platformStatus, Date createTime, Date updateTime) {

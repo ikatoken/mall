@@ -2,29 +2,33 @@ package com.mall.pojo;
 
 import java.util.Date;
 
+/**
+ * 购物车实体对象
+ */
 public class Shipping {
+    //购物车主键编号
     private Integer id;
-
+    //用户编号
     private Integer userId;
-
+    //收款人 姓名
     private String receiverName;
-
+    //收款人 手机
     private String receiverPhone;
-
+    //收获人 固定电话
     private String receiverMobile;
-
+    //省份
     private String receiverProvince;
-
+    //城市
     private String receiverCity;
-
+    //区/县
     private String receiverDistrict;
-
+    //地址
     private String receiverAddress;
-
+    //邮政编码
     private String receiverZip;
-
+    //创建时间
     private Date createTime;
-
+    //修改时间
     private Date updateTime;
 
     public Shipping(Integer id, Integer userId, String receiverName, String receiverPhone, String receiverMobile, String receiverProvince, String receiverCity, String receiverDistrict, String receiverAddress, String receiverZip, Date createTime, Date updateTime) {

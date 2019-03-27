@@ -3,29 +3,33 @@ package com.mall.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 商品实体
+ */
 public class Product {
+    //商品编号
     private Integer id;
-
+    //商品品类编号
     private Integer categoryId;
-
+    //商品名称
     private String name;
-
+    //商品标题
     private String subtitle;
-
+    //商品头图
     private String mainImage;
-
+    //
     private String subImages;
-
+    //商品描述
     private String detail;
-
+    //商品价格
     private BigDecimal price;
-
+    //
     private Integer stock;
-
+    //商品上下架状态
     private Integer status;
-
+    //创建时间
     private Date createTime;
-
+    //最后修改时间
     private Date updateTime;
 
     public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime) {

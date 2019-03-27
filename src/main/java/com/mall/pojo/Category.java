@@ -2,19 +2,23 @@ package com.mall.pojo;
 
 import java.util.Date;
 
+/**
+ * 品类详情
+ */
 public class Category {
+    //品类主键编号
     private Integer id;
-
+    //父节点编号
     private Integer parentId;
-
+    //品类名称
     private String name;
-
+    //品类节点状态
     private Boolean status;
-
+    //品类排序编号
     private Integer sortOrder;
-
+    //创建时间
     private Date createTime;
-
+    //最后修改时间
     private Date updateTime;
 
     public Category(Integer id, Integer parentId, String name, Boolean status, Integer sortOrder, Date createTime, Date updateTime) {
